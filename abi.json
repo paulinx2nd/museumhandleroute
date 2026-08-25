@@ -1,0 +1,198 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "attest_stop": {
+      "params": [
+        [
+          "route_id",
+          "string"
+        ],
+        [
+          "stop_id",
+          "string"
+        ],
+        [
+          "temperature_tenths",
+          "int"
+        ],
+        [
+          "humidity_percent",
+          "int"
+        ],
+        [
+          "condition_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "cancel_draft": {
+      "params": [
+        [
+          "route_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_object": {
+      "params": [
+        [
+          "object_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_object_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_object_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_route": {
+      "params": [
+        [
+          "route_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_route_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_route_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_route": {
+      "params": [
+        [
+          "object_id",
+          "string"
+        ],
+        [
+          "route_key",
+          "string"
+        ],
+        [
+          "route_plan",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "register_object": {
+      "params": [
+        [
+          "object_key",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "handling_requirements",
+          "string"
+        ],
+        [
+          "min_temperature_tenths",
+          "int"
+        ],
+        [
+          "max_temperature_tenths",
+          "int"
+        ],
+        [
+          "min_humidity_percent",
+          "int"
+        ],
+        [
+          "max_humidity_percent",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "resolve_excursion": {
+      "params": [
+        [
+          "route_id",
+          "string"
+        ],
+        [
+          "continue_route",
+          "bool"
+        ],
+        [
+          "curator_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "screen_route": {
+      "params": [
+        [
+          "route_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
